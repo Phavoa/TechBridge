@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display:flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  height: 100vh;
+  align-items: center;
+}
+
+.main{
+  width:450px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.formHeader {
+  padding: 5px;
+}
+
+.createAcc, .afterCreate {
+  text-align: center;
+  /* font-weight: 600; */
+}
+
+.createAcc{
+  margin-top: 20px;
+  font-size: x-large;
+}
+
+form {
+  padding: 20px;
+}
+
+.question {
+  font-size: small;
+  margin-bottom: 5px;
+  display: flex;
+
+  /* color: pink */
+}
+
+.questionMark {
+  background-color: rgb(60, 60, 60);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5px;
+  margin-left: 5px;
+}
+
+.names, .dates, .gender, .contact {
+  display: flex;
+  gap: 8px;
+}
+
+.formInput {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.genderInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  margin-bottom: 8px;
+}
+
+.policies {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.policies > p {
+  margin-bottom: 10px;
+}
+
+.btnDiv, .login {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: rgb(39, 167, 39);
+  border: 1px solid gray;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 150px;
+  color: white;
+  font-weight: bold;
+}
+
+.login {
+  margin: 10px;
+}
+
+.login > p{
+  font-size: large;
+  color: rgb(57, 57, 248);
+  margin: 5px
+}
+
+a {
+  text-decoration: none;
+  color: rgb(57, 57, 248);
+}

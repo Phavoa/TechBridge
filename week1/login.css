@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    height: 55%;
+  }
+  
+  .facebook-left {
+    max-width: 40%;
+  }
+  
+  .facebook-left h1 {
+    color: blue;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  }
+  
+  .facebook-left p {
+    font-size: 20px;
+    color: #606770;
+    margin: 0;
+  }
+  
+  .form-div {
+    max-width: 38%;
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form button {
+    width: 100%;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  form button:hover {
+    background-color: #166fe5;
+  }
+  .fp-div {
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  form a {
+    color: #1877f2;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  form a:hover {
+    text-decoration: underline;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #dddfe2;
+  }
+  .btnclass {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .create-acc {
+    background-color: #42b72a;
+    margin-top: 20px;
+    width: 200px
+  }
+  
+  .create-acc:hover {
+    background-color: #36a420;
+  }
+  
+  .tips {
+    /* display: none; */
+    position: absolute;
+    margin-top: 20px;
+    right: 130px;
+    bottom: 0;
+  }
+  /* .form-div::after {
+    content: "Create a page for a celebrity, brand or business";
+    margin-top: 100px;
+  } */

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="formHeader">
+        <h1 class="createAcc">Create a new account</h1>
+        <p class="afterCreate">It's quick and easy.</p>
+      </div>
+      <hr />
+      <form action="">
+        <div class="names">
+          <input type="text" placeholder="First name" class="formInput" />
+          <input type="text" placeholder="Surname" class="formInput" />
+        </div>
+        <br />
+        <div class="dobDiv">
+          <p class="question">
+            Date of birth <span class="questionMark">?</span>
+          </p>
+          <div class="dates">
+            <select class="formInput">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="" selected>17</option>
+              <option value="">1</option>
+            </select>
+            <select class="formInput">
+              <option value="">Jan</option>
+              <option value="">Feb</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">Mar</option>
+              <option value="">6</option>
+              <option valuep="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="" selected>Oct</option>
+              <option value="">1</option>
+            </select>
+
+            <select class="formInput">
+              <option value="">2020</option>
+              <option value="">2021</option>
+              <option value="">2022</option>
+              <option value="" selected>2024</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <div>
+          <p class="question">Gender <span class="questionMark">?</span></p>
+          <div class="gender">
+            <div class="formInput genderInput">
+              <label for="">Female </label>
+              <input type="radio" />
+            </div>
+            <div class="formInput genderInput">
+              <label for="">Male </label>
+              <input type="radio" />
+            </div>
+            <div class="formInput genderInput">
+              <label for="">Custom </label>
+              <input type="radio" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <div class="contact">
+            <input
+              type="text"
+              placeholder="Mobile number or email address"
+              class="formInput"
+            />
+          </div>
+          <div class="contact">
+            <input type="text" placeholder="New password" class="formInput" />
+          </div>
+        </div>
+
+        <div class="policies">
+          <p>
+            People who use our service may have uploaded your contact
+            information to Facebook. <a href="#">Learn more</a>
+          </p>
+          <p>
+            By clicking Sign Up, you agree to our
+            <a href="#">Tearms, Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may recieve SMS notifications
+            from us and can opt out at any time.
+          </p>
+        </div>
+        <div class="btnDiv">
+          <button>Sign Up</button>
+        </div>
+        
+        <div class="login">
+          <p>Already have an account?</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

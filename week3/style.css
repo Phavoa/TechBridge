@@ -1,0 +1,53 @@
+:root {
+    --clr-accent: #ff7f50;
+    --clr-rgba: rgba(255, 127, 80, 0.1);
+}
+
+.btn {
+    width: 200px;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: var(--clr-accent);
+    background-color: var(--clr-rgba);
+    border: 10px solid var(--clr-accent);
+    border-radius: 5px;
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+
+    /* transition: all 0.3s; */
+}
+
+.btn:hover {
+    transform: translateX(10px);
+    background-color: var(--clr-accent);
+    color: white;
+}
+
+
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.heading-1 {
+    text-align: center;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-fill-mode: none;
+
+    transform: translateX(-150px);
+}

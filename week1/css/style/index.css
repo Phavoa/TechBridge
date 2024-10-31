@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+    width: 100%;
+    gap:5px;
+    border: 2px solid black;
+
+}
+ .main > div {
+    width: 100%;
+} 
+
+.main > div > div{
+    flex: 1;
+    height: 200px;
+    /* border: 1px solid gray; */
+    margin: 2px;
+}
+
+
+.gradient1{
+    background-image: linear-gradient(to right,red, yellow);
+    border: 5px solid green;
+}
+
+.gradient2{
+    background-image: linear-gradient(to left,red, yellow);
+    border: 5px dashed green;
+
+}
+
+.gradient3{
+    background-image: linear-gradient(to top, red, yellow);
+    border: 5px dotted green;
+
+}
+
+.gradient4{
+    background-image: linear-gradient(to bottom, red, yellow);
+    border: 5px dashed green;
+}
+
+.float_div{
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.float_div img {
+    float: left;
+    margin: 10px;
+    border: 10px groove green;
+
+}
