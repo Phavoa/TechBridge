@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors - Deluxe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="game-container">
+      <header>
+        <h1 class="title">Tega Rock Paper Scissors</h1>
+      </header>
+
+      <section class="scoreboard">
+        <div class="score player-score">
+          <p>Player</p>
+          <span id="player-score">0</span>
+        </div>
+        <div class="score computer-score">
+          <p>Computer</p>
+          <span id="computer-score">0</span>
+        </div>
+      </section>
+
+      <section class="battlefield" >
+        <div class="choice-container player-choice">
+          <img
+            id="player-icon"
+            src="./images/soccer-player.png"
+            alt="Player Choice"
+            width="200px"
+          />
+          <p class="label">Player</p>
+        </div>
+        <div class="vs-text">VS</div>
+        <div class="choice-container computer-choice">
+          <img
+            id="computer-icon"
+            src="./images/lcd.png"
+            width="200px"
+            alt="Computer Choice"
+          />
+          <p class="label">Computer</p>
+        </div>
+      </section>
+
+      <section class="choices">
+        <button class="choice" data-choice="ROCK">
+          <img src="./images/rock.png" alt="Rock" />
+        </button>
+        <button class="choice" data-choice="PAPER">
+          <img src="./images/paper.png" alt="Paper" />
+        </button>
+        <button class="choice" data-choice="SCISSORS">
+          <img src="./images/scissors.png" alt="Scissors" />
+        </button>
+      </section>
+
+      <section class="result">
+        <p id="round-result">Make your move!</p>
+        <p id="final-result"></p>
+      </section>
+
+      <section class="reset-section">
+        <button class="reset" style="display: none">Restart Game</button>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

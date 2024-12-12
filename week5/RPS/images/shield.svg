@@ -1,0 +1,20 @@
+<svg
+    width="100"
+    height="100"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- Shield Path -->
+    <path
+        d="M12 2C10.69 2 4 4.34 4 8V12C4 16.92 8.38 20.77 11.43 21.91C11.79 22.05 12.21 22.05 12.57 21.91C15.62 20.77 20 16.92 20 12V8C20 4.34 13.31 2 12 2Z"
+        stroke="#4A5568"
+        stroke-width="1.5"
+        fill="#A0AEC0"
+    />
+    <!-- Check Mark -->
+    <path
+        d="M10 13.2L8 11.2L7.2 12L10 14.8L16.8 8L16 7.2L10 13.2Z"
+        fill="#4A5568"
+    />
+</svg>

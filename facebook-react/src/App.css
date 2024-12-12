@@ -1,0 +1,105 @@
+:root {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  background-color: #f0f2f5;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1877f2;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #606770;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.left {
+  max-width: 400px;
+}
+
+.right {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 360px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: auto;
+}
+
+button:hover {
+  background-color: #165ec9;
+}
+
+button.secondary {
+  background-color: #42b72a;
+}
+
+button.secondary:hover {
+  background-color: #36a420;
+}
+
+.forgot-password {
+  color: #1877f2;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.create-page {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}

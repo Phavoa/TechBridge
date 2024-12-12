@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Cat Fact</title>
+  <style>
+    /* General body styling */
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+      color: #4a4a4a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Main container */
+    .container {
+      text-align: center;
+      background: white;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 500px;
+    }
+
+    /* Title styling */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #6a1b9a;
+    }
+
+    /* Button styling */
+    button {
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      background: #8e24aa;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #ab47bc;
+      transform: scale(1.05);
+    }
+
+    button:disabled {
+      background: #b39ddb;
+      cursor: not-allowed;
+    }
+
+    /* Fact container styling */
+    .fact-container {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #4e4e4e;
+      padding: 15px;
+      border: 2px dashed #ce93d8;
+      border-radius: 10px;
+      background: #fce4ec;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .fact-container.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fact-container {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Random Cat Fact Generator</h1>
+    <button id="getFactButton">Generate Cat Fact</button>
+    <div class="fact-container" id="factContainer">Click the button to get a fun cat fact!</div>
+  </div>
+
+  <script>
+    const button = document.getElementById("getFactButton");
+    const factContainer = document.getElementById("factContainer");
+
+    button.addEventListener("click", () => {
+      factContainer.classList.remove("fade-in");
+      factContainer.textContent = "Loading...";
+      button.disabled = true; // Disable the button during loading
+
+      const req = new XMLHttpRequest();
+      req.open("GET", "https://catfact.ninja/facts");
+
+      req.onload = () => {
+        const response = JSON.parse(req.responseText);
+        const randomFact = response.data[Math.floor(Math.random() * response.data.length)].fact;
+
+        // Display the fact with an animation
+        factContainer.textContent = randomFact;
+        setTimeout(() => factContainer.classList.add("fade-in"), 50);
+        button.disabled = false; // Re-enable the button after loading
+      };
+
+      req.onerror = () => {
+        factContainer.textContent = "Failed to fetch cat facts. Please try again.";
+        button.disabled = false; // Re-enable the button in case of error
+      };
+
+      req.send();
+    });
+  </script>
+</body>
+</html>
